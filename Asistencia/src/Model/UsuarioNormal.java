@@ -1,0 +1,47 @@
+package Model;
+
+/**
+ *
+ * @author Nemo
+ */
+public class UsuarioNormal implements Usuario{
+    
+    private final String id;
+    private final String nombre;
+    private final String correo;
+    private final String contraseña;
+    
+    public UsuarioNormal(String id, String nombre, String correo, String contraseña){
+        this.id = id;
+        this.nombre = nombre;
+        this.correo = correo;
+        this.contraseña = contraseña;
+    }
+
+    @Override
+    public String getId() {
+        return id;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public String getTipo() {
+        return "Normal";
+   
+    }
+
+    @Override
+    public String getCorreo() {
+    return correo;
+    }
+
+    @Override
+    public String getContraseña() {
+        return contraseña;
+    }
+    
+}
